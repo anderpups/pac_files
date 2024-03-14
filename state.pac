@@ -4,7 +4,7 @@ function FindProxyForURL(url, host) {
     return "PROXY localhost:3128; DIRECT"; // sets connection through Web Appliance.
   }
 
-  if (dnsDomainIs(host, ".azure.com")) {
+  if (dnsDomainIs(".azure.com",".azure.net")) {
     return "PROXY localhost:3128; DIRECT"; // sets connection through Web Appliance.
   }
 

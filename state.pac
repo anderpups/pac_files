@@ -12,6 +12,10 @@ if (dnsDomainIs(host, ".azure.net")) {
     return "PROXY localhost:3128; DIRECT"; // sets connection through Web Appliance.
   }
 
+if (dnsDomainIs(host, "pki.state.de.us")) {
+    return "PROXY localhost:3128; DIRECT"; // sets connection through Web Appliance.
+  }
+
  else {
     // If not true...
     return "DIRECT"; // If true, sets "DIRECT" connection

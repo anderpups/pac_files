@@ -20,6 +20,10 @@ if (dnsDomainIs(host, ".lab.lan")) {
     return "PROXY localhost:3128; DIRECT"; // sets connection through Web Appliance.
   }
 
+if (dnsDomainIs(host, ".cyberark.cloud")) {
+    return "PROXY localhost:3128; DIRECT"; // sets connection through Web Appliance.
+  }
+
  else {
     // If not true...
     return "DIRECT"; // If true, sets "DIRECT" connection
